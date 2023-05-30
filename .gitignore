@@ -4,6 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
+ping-coming-soon-page-master/
 
 # testing
 /coverage
