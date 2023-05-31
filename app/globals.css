@@ -5,3 +5,15 @@
 .footer-container {
 	@apply flex h-12 w-12 items-center justify-center rounded-full border border-blue/50 hover:cursor-pointer hover:bg-blue;
 }
+
+.btn {
+	@apply rounded-full bg-blue px-8 py-4 text-center text-xs font-semibold text-white hover:cursor-pointer hover:opacity-80 md:h-14 md:w-fit md:px-12 md:text-base;
+}
+
+.input-element {
+	@apply w-full rounded-full border border-paleBlue px-8 py-4 font-light text-veryDarkBlue placeholder:text-xs  placeholder:text-[#B8C7ED] focus:border-none  focus:outline-none focus:ring-1 placeholder:md:text-base;
+}
+
+.validation-element {
+	@apply mb-5 mt-3 text-xs font-normal italic tracking-wide text-lightRed md:mb-0 md:ml-6 md:text-left;
+}

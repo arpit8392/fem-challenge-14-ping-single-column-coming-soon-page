@@ -24,32 +24,28 @@ const InputForm = () => {
 		resolver: yupResolver(schema),
 	})
 
-	const onSubmit = (data: FormData) => console.log(data)
+	const onSubmit = (data: FormData) => {
+		console.log(data)
+	}
 
 	return (
 		<form
 			onSubmit={handleSubmit(onSubmit)}
 			noValidate
-			className='flex flex-col space-y-3 md:flex-row md:items-center md:space-x-4 md:space-y-0 '>
-			<div className='flex flex-1 flex-col space-y-2 md:text-left'>
+			className='flex flex-col space-y-3 md:w-[40%] md:flex-row md:space-x-4 md:space-y-0'>
+			<div className='flex-1'>
 				<input
 					type='email'
-					{...register('email', { required: true })}
+					{...register('email')}
 					placeholder='Your email address...'
-					className={`rounded-[28px] border border-paleBlue px-8 py-4 font-light text-veryDarkBlue outline-none placeholder:text-xs  placeholder:text-[#B8C7ED] ${
-						errors.email
-							? `focus:border-lightRed `
-							: `focus:border-veryDarkBlue`
-					} `}
+					className={`input-element ${errors.email && 'focus:ring-lightRed'} `}
 				/>
 				{errors.email && (
-					<span className='mb-3 text-xs font-normal italic tracking-wide text-lightRed'>
-						{errors.email?.message}
-					</span>
+					<p className='validation-element'>{errors.email?.message}</p>
 				)}
 			</div>
 
-			<button className='rounded-full bg-blue px-8 py-4 font-semibold text-white hover:cursor-pointer hover:opacity-80'>
+			<button type='submit' className='btn'>
 				Notify Me
 			</button>
 		</form>

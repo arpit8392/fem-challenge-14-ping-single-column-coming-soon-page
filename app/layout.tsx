@@ -1,4 +1,3 @@
-import Footer from '@/components/Footer'
 import './globals.css'
 import { Libre_Franklin } from 'next/font/google'
 
@@ -20,10 +19,7 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${libre_franklin.variable} font-sans`}>
-				{children}
-				<Footer />
-			</body>
+			<body className={`${libre_franklin.variable} font-sans`}>{children}</body>
 		</html>
 	)
 }
