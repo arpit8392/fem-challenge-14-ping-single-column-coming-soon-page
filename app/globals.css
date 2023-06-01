@@ -15,5 +15,5 @@
 }
 
 .validation-element {
-	@apply mb-5 mt-3 text-xs font-normal italic tracking-wide text-lightRed md:mb-0 md:ml-6 md:text-left;
+	@apply py-2 md:px-6 text-xs font-normal italic tracking-wide text-lightRed md:text-left;
 }
