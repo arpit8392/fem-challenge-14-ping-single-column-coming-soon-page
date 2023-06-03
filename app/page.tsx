@@ -3,8 +3,7 @@ import InputForm from '@/components/InputForm'
 
 export default function Home() {
 	return (
-		<main className='grid min-h-screen grid-cols-1 justify-items-center text-center gap-y-8 px-9 py-20 md:gap-y-10'>
-			<img src='/images/logo.svg' alt='Company Logo' className='w-14 md:w-24' />
+		<main className='grid min-h-screen grid-cols-1 justify-items-center gap-y-8 text-center md:gap-y-10'>
 			<div className='flex flex-col gap-y-4'>
 				<h1 className='text-2xl font-light text-gray md:text-5xl'>
 					We are launching{' '}
@@ -19,7 +18,7 @@ export default function Home() {
 			<img
 				src='/images/illustration-dashboard.png'
 				alt='illustration dashboard'
-				className='md:w-1/2 py-16 md:py-24'
+				className='py-16 md:w-1/2 md:py-24'
 			/>
 
 			<Footer />

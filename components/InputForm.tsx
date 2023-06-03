@@ -34,7 +34,7 @@ const InputForm = () => {
 			noValidate
 			className='flex w-full flex-col space-y-3 md:w-2/5 md:min-w-fit md:max-w-full md:flex-row md:space-x-4 md:space-y-0'>
 			<div className='flex-1'>
-				<label htmlFor='email' aria-label='Email' className='sr-only'>
+				<label htmlFor='email' className='sr-only'>
 					Email Address
 				</label>
 

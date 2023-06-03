@@ -19,7 +19,16 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en'>
-			<body className={`${libre_franklin.variable} font-sans`}>{children}</body>
+			<body className={`${libre_franklin.variable} px-9 py-20 font-sans `}>
+				<header className='flex justify-center pb-8 md:pb-10'>
+					<img
+						src='/images/logo.svg'
+						alt='Ping Company Logo'
+						className='w-14 md:w-24'
+					/>
+				</header>
+				{children}
+			</body>
 		</html>
 	)
 }
