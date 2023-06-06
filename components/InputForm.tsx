@@ -40,6 +40,9 @@ const InputForm = () => {
 
 				<input
 					type='email'
+					id='email'
+					autoComplete='off'
+					aria-invalid={errors.email ? 'true' : 'false'}
 					{...register('email')}
 					placeholder='Your email address...'
 					className={`input-element ${
@@ -47,7 +50,9 @@ const InputForm = () => {
 					} `}
 				/>
 				{errors.email && (
-					<p className='validation-element'>{errors.email?.message}</p>
+					<p role='alert' className='validation-element'>
+						{errors.email?.message}
+					</p>
 				)}
 			</div>
 
