@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import './globals.css'
 import { Libre_Franklin } from 'next/font/google'
 
@@ -21,10 +22,19 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={`${libre_franklin.variable} px-9 py-20 font-sans `}>
 				<header className='flex justify-center pb-8 md:pb-10'>
-					<img
+					<Image
 						src='/images/logo.svg'
 						alt='Ping Company Logo'
-						className='w-14 md:w-24'
+						width={90}
+						height={39}
+						className='hidden md:block'
+					/>
+					<Image
+						src='/images/logo.svg'
+						alt='Ping Company Logo'
+						width={56}
+						height={24}
+						className='block md:hidden'
 					/>
 				</header>
 				{children}
